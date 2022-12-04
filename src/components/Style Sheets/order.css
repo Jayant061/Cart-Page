@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+.OrderSummary{
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 40%;
+}
+.OrderSummary h3 span{
+    font-size: 14px;
+}
+.summary{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    padding-left: 0;
+}
+button{
+    cursor: pointer;
+}
+.checkout{
+    padding: 20px 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(6, 6, 102);
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    
+}
+.continue{
+    border: none;
+    background-color: white;
+    color: rgb(6, 6, 102);
+    font-weight: 700;
+    font-size: 14px;
+}
+.inactive{
+    background-color: rgba(6, 6, 102, 0.24);
+}
+.deliveryNorder{
+    display: flex;
+    justify-content: space-between;
+}
+.delivery{
+    padding: 50px 20px;
+    width:40%
+}
+
+.deliveryDetails{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.deliveryheading{
+        padding: "15px 30px"
+}
+
+.pincode{
+    margin: 10px 30px;
+    margin-left: 0;
+    padding: 10px 0;
+    border-bottom:1px solid #302c2c ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.group{
+    display: flex;
+
+}
+
+.group img{
+    scale: 1.2;
+}
+.group input[type = number]::-webkit-inner-spin-button,::-webkit-outer-spin-button{
+    appearance: none;
+}
+.group input[type = number]{
+    margin-left: 10px;
+    border: none;
+    font-size: 18px;
+}
+.buttons{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.checkBtn{
+    border: none;
+    background-color: white;
+    color: rgb(9, 9, 126);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.errorMessage{
+    padding:10px 30px;
+}
+.featuredetails{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.featuredetails p{
+    padding-left: 10px;
+}
+.checkimg img{
+    scale: 1.2;
+}
+.invisible{
+    display: none;
+}
+
+@media only screen and (max-width:500px){
+   
+    .deliveryNorder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .delivery{
+        border: 1px solid #bbbbbb;
+        border-radius: 5px;
+        padding: 20px 0;
+        margin: 0 10px;
+        width: 90%;
+    }
+    .pincode{
+        width: 90%;
+        margin: 10px 2.5%
+
+    }
+    .group input[type = number]{
+        width: 100%;
+    }
+    .featuredetails{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .deliveryheading{
+        padding-left: 10px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .deliveryDetails{
+        width: 100%;
+        padding: 0;
+        font-size: 1rem;
+    }
+   
+    .OrderSummary{
+        padding: 50px 0;
+        margin: 50px 10px;
+        border: 1px solid #bbbbbb;
+        border-radius: 5px;
+        width: 90%;
+    }
+    .summary{
+        padding: 10px;
+    }
+    .summary h4{
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .orderTotal{
+        background-color: #f3f0f0;
+        border: none;
+        border-radius: 5px;
+    }
+    .orderTotal h4{
+        font-weight: 700;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .checkout{
+       margin: 20px 0;
+       padding: 10px 50px;
+    }
+}
+@media only screen and (max-width:860px) and (min-width:501px){
+    .visiblity{
+        display: none;
+    }
+    
+    .deliveryNorder{
+        display: flex;
+        width: 100%;
+        align-content: flex-start;
+
+    }
+    .deliveryheading{
+        font-weight: 500;
+    }
+    .delivery{
+        padding: 50px 10px;
+
+    }
+    .pincode{
+        width: 90%;
+        margin: 10px 0;
+
+    }
+    .group input[type = number]{
+        width: 100%;
+    }
+    .deliveryDetails{
+        width: 100%;
+        padding: 0;
+        font-size: 1rem;
+    }
+   
+    .OrderSummary{
+        padding: 50px 0;
+        margin: 50px 10px;
+        border: 1px solid #bbbbbb;
+        border-radius: 5px;
+    }
+    .orderTotal{
+        background-color: #f3f0f0;
+        border: none;
+        border-radius: 5px;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .checkout{
+       margin: 20px 0;
+       padding: 10px 50px;
+    }
+    .delivery{
+        flex-basis: 40%;
+        font-size: 1rem;
+    }
+    .group img{
+        scale:1;
+    }
+    .group input[type = number]{
+        width: 90%;
+        margin: 0;
+    }
+    .checkBtn{
+        font-size: 14px;
+        padding-left: 5px;
+    }
+    .checkimg img{
+        scale: 1;
+    }
+    .featuredetails{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    
+    }
+    .featuredetails p{
+        font-size: 12px;
+    }
+
+    .OrderSummary{
+        flex-basis: 55%;
+        margin: 0;
+        border: none;
+    }
+    .summary h4{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .summary{
+        padding-left: 0;
+    }
+    .buttons{
+        align-items: end;
+        padding-right: 20px;
+    }
+    .orderTotal{
+        background-color: white;
+        padding-top: 50px;
+    }
+
+}

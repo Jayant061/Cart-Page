@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Montserrat;
+
+}
+.logo{
+    margin-top: 15px;
+}
+.navbar{
+    padding:10px 50px;
+    background-color: midnightblue;
+    display: flex;
+    justify-content: space-between;
+}
+.navItems{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navItems a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.navItems span{
+    text-align: center;
+    margin: auto 0;
+    color: white;
+}.items{
+    display: flex;
+    cursor: pointer;
+    
+}
+
+@media  only screen and  (max-width:500px) {
+    .trackOrder{
+        display: none;
+    }
+    .navbar{padding: 10px 20px;}
+
+}
+
